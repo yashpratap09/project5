@@ -44,4 +44,4 @@ const orderSchema = new mongoose.Schema({
 
 }, { timestamps: true });
 
-module.exports = mongoose.model('ShoppingCartProject_Order', orderSchema);
+module.exports = mongoose.model('ShoppingCartProject_Order', orderSchema)

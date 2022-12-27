@@ -11,10 +11,6 @@ const createUser = async function (req, res) {
         let data = req.body;
         if (Object.keys(data) == 0) { return res.status(400).send({ status: false, message: 'No data provided' }) }
 
-       
-
-       
-
         if (!(validator.isValid(data.fname))) { return res.status(400).send({ status: false, message: "First Name is required" }) }
 
         if (!(validator.isValid(data.lname))) { return res.status(400).send({ status: false, message: "Last Name is required" }) }
@@ -249,10 +245,6 @@ const updateUser = async function (req, res) {
         return res.status(500).send({ status: false, message: error.message })
     }
 }
-
-
-
-
 
 
 module.exports.createUser = createUser;
