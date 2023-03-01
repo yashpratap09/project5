@@ -1,4 +1,4 @@
-#Thorium
+#Lithium
 
 ## Project - Products Management
 
